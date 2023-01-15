@@ -427,9 +427,10 @@ p {
 		letter-spacing: 1px;
 		background-color: $main-color-shadow;
 		cursor: pointer;
-		transition: transform 0.3s;
+		transition: all 0.3s;
 		&:hover {
 			transform: scale(1.04);
+			background-color: $main-color;
 		}
 	}
 }

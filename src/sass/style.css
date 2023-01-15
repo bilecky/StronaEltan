@@ -500,10 +500,11 @@ p {
   letter-spacing: 1px;
   background-color: rgba(57, 12, 163, 0.6078431373);
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: all 0.3s;
 }
 .contact__form-btn:hover {
   transform: scale(1.04);
+  background-color: #3a0ca3;
 }
 
 .footer {
