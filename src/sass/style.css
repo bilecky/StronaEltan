@@ -510,6 +510,10 @@ p {
 .footer {
   color: rgb(242, 242, 242);
   background-color: #171717;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .footer .wrapper {
   padding: 3em 2em;

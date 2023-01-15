@@ -438,6 +438,8 @@ p {
 .footer {
 	color: $fonts-color;
 	background-color: $section-heading-color;
+	user-select: none;
+
 	.wrapper {
 		padding: 3em 2em;
 	}
