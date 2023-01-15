@@ -4,13 +4,14 @@ $main-color-shadow: #390ca39b;
 $fonts-color: rgb(242, 242, 242);
 $section-heading-color: #171717;
 $no-border-sections-color: #1b1919;
-$offer-companies-bgc: rgb(241, 237, 237);
-
+$offer-companies-bgc: rgb(243, 243, 243);
 
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
+	position: relative;
+	z-index: 10;
 }
 
 .section-heading {
@@ -22,7 +23,7 @@ $offer-companies-bgc: rgb(241, 237, 237);
 	text-align: center;
 	color: $main-color;
 	letter-spacing: 2px;
-	z-index: 1;
+	z-index: -1000;
 }
 
 .section-padding {

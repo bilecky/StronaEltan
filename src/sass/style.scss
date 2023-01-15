@@ -265,17 +265,19 @@ p {
 	}
 
 	&__text {
-		position: absolute;
-		z-index: 8880;
+		position: fixed;
+		z-index: -10;
 		width: 310px;
 		visibility: hidden;
 		opacity: 0;
 		font-size: 1.4rem;
 		background-color: $offer-companies-bgc;
+		line-height: 1.4;
 		color: $main-color;
 		top: -25%;
 		left: -25%;
 		transition: 1s;
+		font-size: 1.5rem;
 		gap: 0;
 		padding: 1em;
 		border-radius: 8px;
@@ -283,21 +285,20 @@ p {
 			margin-bottom: 0.4em;
 		}
 	}
-	.name {
-		z-index: 1;
-		position: relative;
+	&:hover {
+		z-index: 8888;
 	}
-
-
-	&:hover .firm__text{
-		position: absolute;
+	&:hover .firm__text {
 		visibility: visible;
 		opacity: 1;
 		z-index: 8888;
+		display: block;
 	}
 }
 
 .orders {
+	position: relative;
+	z-index: -1;
 	&.section-padding {
 		padding-top: 0em;
 		padding-bottom: 4em;
