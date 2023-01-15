@@ -32,6 +32,14 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.author {
+  text-decoration: none;
+  color: rgb(242, 242, 242);
+}
+.author:hover {
+  transform: rotate(20deg);
+}
+
 @-webkit-keyframes pulse {
   from {
     transform: scale(1);
@@ -461,6 +469,8 @@ p {
 .contact__form, .contact__form-top {
   display: flex;
   flex-direction: column;
+  color: black;
+  font-weight: 400;
 }
 .contact__form-label {
   margin-bottom: 0.5em;

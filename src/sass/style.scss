@@ -395,6 +395,8 @@ p {
 	&__form-top {
 		display: flex;
 		flex-direction: column;
+		color: black;
+		font-weight: 400;
 	}
 	&__form-label {
 		margin-bottom: 0.5em;
