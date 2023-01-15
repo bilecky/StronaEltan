@@ -12,6 +12,7 @@
   text-align: center;
   color: #3a0ca3;
   letter-spacing: 2px;
+  z-index: 1;
 }
 
 .section-padding {
@@ -289,27 +290,13 @@ p {
 }
 
 .offer ul {
+  position: relative;
+  z-index: 0;
   display: flex;
   gap: 3em;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.offer li {
-  text-align: center;
-  list-style: none;
-  color: #3a0ca3;
-  text-decoration: none;
-  padding: 1.5em 3em;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  font-weight: 600;
-  width: 13em;
-  border-radius: 10px;
-  transition: transform 0.3s;
-  cursor: pointer;
-}
-.offer li:hover {
-  transform: scale(1.08);
 }
 .offer__text--second {
   margin-bottom: 3em;
@@ -322,21 +309,38 @@ p {
 
 .firm {
   position: relative;
-  z-index: 20;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  text-align: center;
+  list-style: none;
+  color: #3a0ca3;
+  text-decoration: none;
+  padding: 1.5em 3em;
+  font-weight: 600;
+  width: 13em;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  z-index: -1;
+  display: inline-block;
+}
+.firm:hover {
+  transform: scale(1.08);
+}
+.firm:hover .firm:not(:hover) {
+  transform: scale(0.5);
 }
 .firm__text {
   position: absolute;
-  z-index: 2221;
+  z-index: 8880;
   width: 310px;
   visibility: hidden;
   opacity: 0;
   font-size: 1.4rem;
-  background: rgb(241, 237, 237);
-  box-shadow: 0;
+  background-color: rgb(241, 237, 237);
   color: #3a0ca3;
   top: -25%;
   left: -25%;
-  transition: 1.5s;
+  transition: 1s;
   gap: 0;
   padding: 1em;
   border-radius: 8px;
@@ -344,9 +348,15 @@ p {
 .firm__text div {
   margin-bottom: 0.4em;
 }
+.firm .name {
+  z-index: 1;
+  position: relative;
+}
 .firm:hover .firm__text {
+  position: absolute;
   visibility: visible;
   opacity: 1;
+  z-index: 8888;
 }
 
 .orders.section-padding {
